@@ -1,0 +1,424 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  margin:0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+button { 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  cursor: pointer;
+}
+
+
+/* HERO styling */
+.hero {
+  background-color: rgb(0, 85, 124);
+  height: 845px;
+  position: relative;
+ 
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.logo {
+  width:80px;
+  margin-left: 50px;
+}
+
+.contactHeader {
+  display: flex;
+  
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 5px 10px 5px 5px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 50px;
+  background-color: white;
+  border-radius: 40px;
+  padding: 5px 30px 5px 5px;
+}
+
+.searchbar {
+  margin-left: 20px;
+  
+}
+
+/* Header House styling */
+
+.house {
+  width:110%;
+  position: absolute;
+  top:8%;
+  left:-3%;
+  z-index: 2;
+  transition: width 3.2s ease-in-out;
+}
+
+/* Hill styling */
+
+.hill {
+  position:absolute;
+  top:30%;
+  left:50%;
+  z-index: 1;
+  width:80%;
+  transition: width 3.2s ease-in-out;
+}
+
+/* Branches styling */
+
+.branch1 {
+  position: absolute;
+  z-index: 3;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(30deg);
+  width: 25%;
+  top:56%;
+  left:-25%;
+  transition: left 3.2s ease-in-out;
+}
+
+.branch2 {
+  position: absolute;
+  z-index: 3;
+  transform:rotate(5deg);
+  width: 40%;
+  top:60%;
+  left:100%;
+  transition: left 3.2s ease-in-out;
+}
+
+/* Text Header styling */
+
+.toptext {
+  color:white;
+  font-size: 150px;
+  position: absolute;
+  z-index: 1;
+  top:-5%;
+  left:100%;
+  transition: left 3.2s ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bottomtext {
+  color:white;
+  font-size: 150px;
+  position: absolute;
+  z-index: 4;
+  top:10%;
+  left:100%;
+  transition: left 3.2s ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.headerbtn {
+  color:black;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 5px 20px;
+  position: absolute;
+  top:48%;
+  left:100%;
+  z-index: 3;
+  transition: left 3.2s ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0px 5px 10px 2px black;
+  
+}
+
+.headerbtn:hover {
+  color:white;
+  background-color: black;
+}
+
+/* PROPERTY OPTIONS START*/
+
+.propertysection {
+  background-color: black;
+  height: 1000px;
+  position: relative;
+  z-index: 4;
+  box-shadow: -2px -25px 25px black;
+
+}
+
+.propertyheading {
+  color:white;
+  position:absolute;
+  font-size: 60px;
+  top:10%;
+  left:23%; 
+}
+
+.subheading {
+  color:gray;
+  position: absolute;
+  top:22%;
+  left:33%;
+  font-size: 30px;
+}
+
+.price1 {
+  color:white;
+  position:absolute;
+  font-size: 40px;
+  top:66%;
+  left: 3.1%;
+  z-index: 2;
+  text-shadow:5px 2px black;
+}
+
+.price2 {
+  color:white;
+  position:absolute;
+  font-size: 40px;
+  top:70.5%;
+  left: 37.2%;
+  z-index: 2;
+  text-shadow:5px 2px black;
+}
+
+.price3 {
+  color:white;
+  position:absolute;
+  font-size: 40px;
+  top:66%;
+  left: 65.3%;
+  z-index: 2;
+  text-shadow:5px 2px black;
+}
+
+.home1 {
+  position: absolute;
+  width: 30%;
+  top:40%;
+  left:3%;
+  border-radius: 10px;
+  transition: all 2.2s ease-in-out;
+  cursor: pointer;
+ 
+}
+
+.home2 {
+  position: absolute;
+  width: 25%;
+  top:50%;
+  left:37%;
+  border-radius: 10px;
+  transition: left 2.2s ease-in-out;
+  cursor: pointer;
+}
+
+.home3 {
+  position: absolute;
+  width: 30%;
+  top:40%;
+  left:65%;
+  border-radius: 10px;
+  transition: left 2.2s ease-in-out;
+  cursor: pointer;
+}
+
+/* DOT 1 */
+
+.dot {
+  height: 1100px;
+  width: 1100px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: -70%;
+  transition: left 2.2s ease-in-out;
+  z-index: 3;
+}
+
+.dot1info {
+  position: relative;
+  z-index: 4;
+  top:20%;
+}
+
+.dothead1 {
+  color:black;
+  font-size: 80px;
+  position:absolute;
+  left: 38%;
+}
+
+.dotsub1 {
+  color:black;
+  font-size: 20px;
+  position:absolute;
+  translate: -50% -50%;
+  transform: translate(650px,170px);
+}
+
+.dot1price {
+  color:black;
+  font-size: 60px;
+  position: absolute;
+  left: 38%;
+  top:100%;
+  transform: translate(0px,210px);
+}
+
+.dot1buttons {
+  display: flex;
+  position: absolute;
+  left:38%;
+  top:50%;
+  transform: translate(0px,300px);
+  
+}
+
+.dot1buttons button {
+  color:white;
+  background-color: black;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px 20px;
+  box-shadow: 0px 2px 5px 1px gray;
+}
+
+.dot1buttons button:hover {
+  color: black;
+  background-color: white;
+}
+
+.dot1buttons :first-child {
+  margin-right: 10px;
+}
+
+/* TOUR SECTION */
+
+.toursection {
+  background-color: black;
+  height: 1000px;
+  position: relative;
+  z-index: 5;
+  box-shadow: -2px -25px 25px black;
+  overflow: hidden;
+}
+
+.housetour {
+  width: 100%;
+  position:absolute;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  top:5%;
+  left: 100%;
+  z-index: 4;
+  transition: left 3.2s ease-in-out;
+}
+
+.branchtour1 {
+  width: 30%;
+  position:absolute;
+  top: 10%;
+  left:80%;
+  z-index: 5;
+  transform: rotate(40deg);
+  transition: transform 3.2s ease-in-out;
+}
+
+.branchtour2 {
+  width: 30%;
+  position:absolute;
+  top: 10%;
+  left:-10%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(35deg);
+  z-index: 5;
+  transition: transform 3.2s ease-in-out;
+}
+
+/* DOT 2 */
+
+.dot2 {
+  height: 1100px;
+  width: 1100px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left:-65%;
+  top:20%;
+  transition: left 2.2s ease-in-out;
+  z-index: 3;
+  transition: left 3.2s ease-in-out;
+}
+
+.dot2info {
+  position: relative;
+  z-index: 4;
+  top:20%;
+}
+
+.dothead2 {
+  color:black;
+  font-size: 80px;
+  position:absolute;
+  left: 23%;
+  
+}
+
+.dotsub2 {
+  color:black;
+  font-size: 20px;
+  position:absolute;
+  translate: -50% -50%;
+  transform: translate(430px,300px);
+}
+
+.dot2buttons {
+  display: flex;
+  position: absolute;
+  left:20%;
+  top:50%;
+  transform: translate(-20px,350px);
+  
+}
+
+.dot2buttons button {
+  color:white;
+  background-color: black;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px 20px;
+  box-shadow: 0px 2px 5px 1px gray;
+}
+
+.dot2buttons button:hover {
+  color: black;
+  background-color: white;
+}
+
+
+
